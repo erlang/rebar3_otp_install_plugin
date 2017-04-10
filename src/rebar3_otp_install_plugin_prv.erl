@@ -26,7 +26,7 @@
 -define(FULL_NAME, atom_to_list(?NAMESPACE)++"_"++atom_to_list(?PROVIDER)).
 -define(DEPS, [{default,compile}]).
 
--define(GIT_URL(App), "git@github.com:erlang/"++atom_to_list(App)++".git").
+-define(GIT_URL(App), "https://github.com/erlang/"++atom_to_list(App)++".git").
 -define(REL_LIB_DIR, filename:join(["rel",?FULL_NAME,"lib"])).
 -define(BIN_DIR,"bin").
 -define(DEFAULT_USER_PREFIX,filename:join(os:getenv("HOME"),".local")).
